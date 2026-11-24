@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Captura pronta</title>
+  <link rel="icon" href="icons/icon32.png">
+  <link rel="stylesheet" href="result.css">
+</head>
+<body>
+  <aside>
+    <div class="brand">
+      <img src="icons/icon48.png" alt="" width="36" height="36">
+      <div>
+        <h1>Captura pronta</h1>
+        <p id="pageTitle" class="muted"></p>
+      </div>
+    </div>
+
+    <p id="meta" class="muted small"></p>
+    <p id="warn" class="warn" hidden></p>
+
+    <h2>Formato do PDF</h2>
+    <label class="field">
+      <span>Tamanho da página</span>
+      <select id="size">
+        <option value="a4">A4 (para imprimir)</option>
+        <option value="letter">Carta</option>
+        <option value="continuous">Página única contínua</option>
+      </select>
+    </label>
+
+    <label class="field">
+      <span>Margem</span>
+      <select id="margin">
+        <option value="0">Sem margem</option>
+        <option value="18" selected>Pequena</option>
+        <option value="36">Normal</option>
+      </select>
+    </label>
+
+    <label class="field">
+      <span>Qualidade da imagem</span>
+      <select id="quality">
+        <option value="0.75">Arquivo menor</option>
+        <option value="0.9" selected>Equilibrada</option>
+        <option value="0.97">Máxima</option>
+      </select>
+    </label>
+
+    <label class="field" id="splitWrap">
+      <span>Divisão das páginas</span>
+      <select id="split">
+        <option value="doc">Uma folha do documento por página</option>
+        <option value="smart" selected>Automática (sem cortar linhas de texto)</option>
+        <option value="plain">Corte simples (altura fixa)</option>
+      </select>
+    </label>
+    <p id="splitHint" class="muted small"></p>
+
+    <div class="actions">
+      <button id="dlPdf" class="primary" disabled>⬇️ Baixar PDF</button>
+      <button id="dlPng" class="secondary" disabled>Baixar como imagem PNG</button>
+    </div>
+
+    <p id="status" class="muted small">Carregando…</p>
+  </aside>
+
+  <main>
+    <iframe id="preview" title="Pré-visualização do PDF"></iframe>
+  </main>
+
+  <script src="db.js"></script>
+  <script src="pdf.js"></script>
+  <script src="result.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Captura Página Inteira</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon48.png" alt="" width="32" height="32">
+    <div>
+      <h1>Captura Página Inteira</h1>
+      <p class="sub">Rola, fotografa e gera o PDF</p>
+    </div>
+  </header>
+
+  <section id="idle">
+    <button id="start" class="primary">📸 Capturar página inteira</button>
+
+    <label class="field">
+      <span>Espera entre cada tela</span>
+      <select id="delay">
+        <option value="300">Rápida (0,3 s)</option>
+        <option value="600" selected>Normal (0,6 s)</option>
+        <option value="1200">Lenta: imagens que carregam ao rolar (1,2 s)</option>
+        <option value="2000">Muito lenta (2 s)</option>
+      </select>
+    </label>
+
+    <p class="tip">Não troque de aba enquanto a captura acontece. Atalho: <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd></p>
+  </section>
+
+  <section id="running" hidden>
+    <p>Capturando… <strong id="pct">0%</strong></p>
+    <div class="bar"><div id="fill"></div></div>
+    <button id="cancel" class="secondary">Cancelar</button>
+  </section>
+
+  <p id="error" class="error" hidden></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
