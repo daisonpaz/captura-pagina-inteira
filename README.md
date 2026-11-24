@@ -25,7 +25,7 @@
 
 ## Instalação
 
-1. [Baixe a versão mais recente](../../releases/latest) (arquivo `.zip`) e descompacte. Outra opção: clique em **Code → Download ZIP** nesta página.
+1. Nesta página, clique no botão verde **Code → Download ZIP** e descompacte o arquivo.
 2. No Chrome, abra `chrome://extensions`.
 3. Ative o **Modo do desenvolvedor** (canto superior direito).
 4. Clique em **Carregar sem compactação** e escolha a pasta descompactada (a que contém o `manifest.json`).
