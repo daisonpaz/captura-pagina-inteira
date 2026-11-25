@@ -1,9 +1,13 @@
 {
   "manifest_version": 3,
   "name": "Captura Página Inteira",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Rola a página automaticamente, captura cada tela e gera um PDF (ou PNG) da página inteira.",
-  "permissions": ["activeTab", "scripting", "storage"],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
   "background": {
     "service_worker": "background.js"
   },
@@ -25,8 +29,11 @@
   },
   "commands": {
     "_execute_action": {
-      "suggested_key": { "default": "Alt+Shift+P" },
+      "suggested_key": {
+        "default": "Alt+Shift+P"
+      },
       "description": "Abrir a Captura Página Inteira"
     }
-  }
+  },
+  "homepage_url": "https://github.com/daisonpaz/captura-pagina-inteira"
 }

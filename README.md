@@ -59,6 +59,10 @@
 | `pdf.js` | Gerador de PDF próprio, sem dependências |
 | `db.js` | Guarda os prints temporariamente (IndexedDB) |
 
+## Privacidade
+
+A extensão não coleta nem envia nenhum dado. Veja a [Política de Privacidade](PRIVACY.md).
+
 ## Licença
 
 [MIT](LICENSE): use, modifique e redistribua à vontade, mantendo o aviso de autoria.
